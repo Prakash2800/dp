@@ -1,27 +1,3 @@
-//.user-form {
-//
-//  span {
-//    display: inline-block;
-//    width: 150px;
-//  }
-//
-//  label {
-//    margin-bottom: 20px;
-//  }
-//  input {
-//    width: 250px;
-//    height:20px;
-//  }
-//
-//  .user-form-email {
-//    margin-top: 20px;
-//
-//    label {
-//      display: inline-block;
-//    }
-//  }
-//}
-
 .user-form {
   margin: 50px 0;
   label {
@@ -42,6 +18,18 @@
   input {
     width: 250px;
     height: 30px;
+    padding-left: 10px;
+  }
+
+  .user-form-message {
+    span {
+      vertical-align: top;
+    }
+  }
+
+  textarea {
+    width: 250px;
+    height: 75px;
     padding-left: 10px;
   }
 

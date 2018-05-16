@@ -10,6 +10,8 @@ import { MenuComponent } from './menu/menu.component';
 import { RulesComponent } from './rules/rules.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EvaluationModule } from './evaluation/evaluation.module';
+import { QuestionsModule } from './questions/questions.module';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(ROUTES, { enableTracing: false })
+    RouterModule.forRoot(ROUTES, { enableTracing: false }),
+    EvaluationModule,
+    QuestionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
