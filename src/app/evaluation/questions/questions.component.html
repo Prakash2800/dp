@@ -1,0 +1,7 @@
+<div *ngFor="let question of (questionsService.getQuestions() | async)" class="block-user">
+    <app-question [question]="question"></app-question>
+</div>
+
+
+<div>
+</div>
