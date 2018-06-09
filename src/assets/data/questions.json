@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "name": "Agapi Mou",
+    "gender": "Male"
+  },
+  {
+    "id":2,
+    "name": "zaser",
+    "gender": "Male"
+  },
+  {
+    "id":3,
+    "name": "Sawue",
+    "gender": "Male"
+  },
+  {
+    "id":4,
+    "name": "richard",
+    "gender": "Female"
+  }
+]

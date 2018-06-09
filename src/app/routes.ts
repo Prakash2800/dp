@@ -3,13 +3,12 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { RulesComponent } from './rules/rules.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { QuestionsComponent } from './evaluation/questions/questions.component';
-import {QuestionComponent} from './evaluation/question/question.component';
+import {EvaluationComponent} from './evaluation/evaluation.component';
 
 export const ROUTES: Routes = [
     {
         path: '',
-        component: HomePageComponent
+        component: EvaluationComponent
     },
     {
         path: 'home',
@@ -17,7 +16,7 @@ export const ROUTES: Routes = [
     },
     {
         path: 'evaluation',
-        component: QuestionsComponent
+        component: EvaluationComponent
     },
     {
         path: 'rules',

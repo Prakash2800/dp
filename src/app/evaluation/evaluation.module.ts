@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EvaluationComponent } from './evaluation.component';
-import {QuestionsService} from './services/questionsService';
-import { QuestionComponent } from './question/question.component';
-import { QuestionsComponent } from './questions/questions.component';
+import {GetQuestionService} from './service/getQuestion.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+      HttpClientModule
   ],
-  declarations: [EvaluationComponent, QuestionComponent, QuestionsComponent],
-  providers: [QuestionsService]
+  declarations: [EvaluationComponent],
+  providers: [GetQuestionService]
 })
 export class EvaluationModule { }
