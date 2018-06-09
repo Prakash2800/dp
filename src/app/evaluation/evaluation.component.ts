@@ -43,7 +43,6 @@ export class EvaluationComponent implements OnInit {
   }
 
   onPreviousClick() {
-      console.log('54');
       this.index2 ++;
       this.op2 = this.questions2[this.index2].option1;
       this.index2$.next(this.index2);
@@ -51,13 +50,9 @@ export class EvaluationComponent implements OnInit {
   }
 
   onNextClick() {
-      console.log('54');
       this.index2 ++;
-
       this.op2 = this.questions2[this.index2].option1;
       this.index2$.next(this.index2);
-      console.log(this.index2);
-      console.log(this.index2$);
   }
 
 }
