@@ -6,24 +6,36 @@
     <h2>Of course, a house doesn’t jump at all.</h2>
 </header>
 <section class="question-info">
-    <span>Index here please: </span><span>{{ index2 }}</span>
+    <span>Index here please: </span><span>{{ index }}</span><br/>
+    <span>Question Length here please: </span><span>{{ questionsLength }}</span>
+</section>
+<section class="question">
+    <div>{{ question }}</div>
 </section>
 <section class="question-container">
-    <div class="option option1">
+    <div class="option option1" (click)="OnSelect(ans1)">
         <span>{{ op1 }}</span>
     </div>
-    <div class="option option2">
+    <div class="option option2" (click)="OnSelect(ans2)">
         <span>{{ op2 }}</span>
     </div>
-    <div class="option option3">
-        <span>holaqw </span>
+    <div class="option option3" (click)="OnSelect(ans3)">
+        <span>{{ op3 }}</span>
     </div>
-    <div class="option option4">
-        <span>holaasd</span>
+    <div class="option option4" (click)="OnSelect(ans4)">
+        <span>{{ op4 }}</span>
     </div>
 </section>
 
 <section class="button-container">
-    <button (click)="onPreviousClick()">Previous</button>
-    <button (click)="onNextClick()">Next</button>
+    <button (click)="onPreviousClick()"
+            [disabled]='disableButtonPrevious'
+            [ngClass] = '{"disabled": disableButtonPrevious}'>
+        Previous
+    </button>
+    <button (click)="onNextClick()"
+            [disabled]='disableButtonNext'
+            [ngClass] = '{"disabled": disableButtonNext}'>
+        Next
+    </button>
 </section>

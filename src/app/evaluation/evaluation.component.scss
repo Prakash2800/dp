@@ -14,6 +14,14 @@
   }
 }
 
+.question {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  border: 1px dotted grey;
+}
+
 .question-container {
   max-width: 800px;
   margin: 0 auto;
@@ -74,6 +82,18 @@
       border: 5px solid transparent;
       border-bottom-color: rgba(0,0,0,0.55);
       background: hsla(500, 100%, 50%, 1);
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.3;
+
+      &:hover {
+        text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+        border: 5px solid transparent;
+        border-bottom-color: rgba(0,0,0,0.35);
+        background: hsla(260, 100%, 50%, 1);
+      }
     }
   }
 }
