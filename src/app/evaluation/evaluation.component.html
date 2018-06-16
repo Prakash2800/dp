@@ -1,5 +1,4 @@
 
-
 <header class="question-intro">
     <h2>Can a kangaroo jump higher than a house?</h2>
     <span>-</span>
@@ -7,23 +6,25 @@
 </header>
 <section class="question-info">
     <span>Index here please: </span><span>{{ index }}</span><br/>
-    <span>Question Length here please: </span><span>{{ questionsLength }}</span>
+    <span>Question Length here please: </span><span>{{ questionsLength }}</span><br/>
+    <span>Information: {{ currentQuestion }} of {{ questionsLength }}</span><br/>
+    <span>Correct Answer: {{ correctAnswer }}</span>
 </section>
 <section class="question">
     <div>{{ question }}</div>
 </section>
 <section class="question-container">
-    <div class="option option1" (click)="OnSelect(ans1)">
-        <span>{{ op1 }}</span>
+    <div class="option option1" [ngClass]="{'selected': isSelected1}" (click)="OnSelect('a')">
+        <span appPositionElement>{{ op1 }}</span>
     </div>
-    <div class="option option2" (click)="OnSelect(ans2)">
-        <span>{{ op2 }}</span>
+    <div class="option option2" [ngClass]="{'selected': isSelected2}" (click)="OnSelect('b')">
+        <span appPositionElement>{{ op2 }}</span>
     </div>
-    <div class="option option3" (click)="OnSelect(ans3)">
-        <span>{{ op3 }}</span>
+    <div class="option option3" [ngClass]="{'selected': isSelected3}" (click)="OnSelect('c')">
+        <span appPositionElement>{{ op3 }}</span>
     </div>
-    <div class="option option4" (click)="OnSelect(ans4)">
-        <span>{{ op4 }}</span>
+    <div class="option option4" [ngClass]="{'selected': isSelected4}" (click)="OnSelect('d')">
+        <span appPositionElement>{{ op4 }}</span>
     </div>
 </section>
 
