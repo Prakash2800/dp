@@ -15,16 +15,16 @@
 </section>
 <section class="question-container">
     <div class="option option1" [ngClass]="{'selected': isSelected1}" (click)="OnSelect('a')">
-        <span appPositionElement>{{ op1 }}</span>
+        <span appPositionElement [format]="'lowercase'">{{ op1 }}</span>
     </div>
     <div class="option option2" [ngClass]="{'selected': isSelected2}" (click)="OnSelect('b')">
-        <span appPositionElement>{{ op2 }}</span>
+        <span appPositionElement [format]="'uppercase'">{{ op2 }}</span>
     </div>
     <div class="option option3" [ngClass]="{'selected': isSelected3}" (click)="OnSelect('c')">
-        <span appPositionElement>{{ op3 }}</span>
+        <span appPositionElement [format]="'lowercase'">{{ op3 }}</span>
     </div>
     <div class="option option4" [ngClass]="{'selected': isSelected4}" (click)="OnSelect('d')">
-        <span appPositionElement>{{ op4 }}</span>
+        <span appPositionElement [format]="'uppercase'">{{ op4 }}</span>
     </div>
 </section>
 
